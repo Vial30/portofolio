@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jovial Wahyu — Personal Portfolio",
+  title: "Jovial | Personal Portfolio",
   description: "Portfolio Jovial Wahyu - Web Development Enthusiast & Full Stack Developer yang berfokus pada pengembangan aplikasi web modern, Next.js, React, TypeScript, Node.js, dan database.",
   keywords: ["portfolio", "jovial wahyu", "web development enthusiast", "full stack developer", "nextjs", "react", "typescript", "node.js", "unity", "c#", "game developer", "tailwind css"],
   authors: [{ name: "Jovial Wahyu" }],
