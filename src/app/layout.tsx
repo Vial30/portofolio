@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jovialwahyu.vercel.app"),
   title: "Jovial | Personal Portfolio",
   description: "Portfolio Jovial Wahyu - Web Development Enthusiast & Full Stack Developer yang berfokus pada pengembangan aplikasi web modern, Next.js, React, TypeScript, Node.js, dan database.",
   keywords: ["portfolio", "jovial wahyu", "web development enthusiast", "full stack developer", "nextjs", "react", "typescript", "node.js", "unity", "c#", "game developer", "tailwind css"],
@@ -27,6 +28,20 @@ export const metadata: Metadata = {
     title: "Jovial Wahyu — Personal Portfolio",
     description: "Portfolio Jovial Wahyu - Web Development Enthusiast & Full Stack Developer yang berfokus pada pengembangan aplikasi web modern, Next.js, React, TypeScript, Node.js, dan database.",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jovial Wahyu — Personal Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jovial Wahyu — Personal Portfolio",
+    description: "Portfolio Jovial Wahyu - Web Development Enthusiast & Full Stack Developer.",
+    images: ["/og-image.jpg"],
   },
 };
 
