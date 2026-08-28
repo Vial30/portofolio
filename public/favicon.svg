@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="favicon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="50%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Squircle container -->
+  <rect width="64" height="64" rx="16" fill="url(#favicon-grad)" />
+  
+  <!-- Stylized Monogram J -->
+  <path d="M38 17H44V36.5C44 43.5 39.5 47 33 47C26.5 47 22 43 22 37.5H28C28 40.2 30 42 33 42C36.2 42 38 40 38 36.5V17Z" fill="#ffffff" />
+  
+  <!-- Modern Glowing Tech Cyan Dot -->
+  <circle cx="21" cy="19" r="3.5" fill="#38bdf8" />
+</svg>

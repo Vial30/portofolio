@@ -14,13 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jovial | Web Development Enthusiast & Full Stack Developer",
-  description: "Portfolio Jovial - Web Development Enthusiast & Full Stack Developer yang berfokus pada pengembangan aplikasi web modern, Next.js, React, TypeScript, Node.js, dan database.",
-  keywords: ["portfolio", "web development enthusiast", "full stack developer", "nextjs", "react", "typescript", "node.js", "unity", "c#", "game developer", "tailwind css"],
-  authors: [{ name: "Jovial" }],
+  title: "Jovial Wahyu — Personal Portfolio",
+  description: "Portfolio Jovial Wahyu - Web Development Enthusiast & Full Stack Developer yang berfokus pada pengembangan aplikasi web modern, Next.js, React, TypeScript, Node.js, dan database.",
+  keywords: ["portfolio", "jovial wahyu", "web development enthusiast", "full stack developer", "nextjs", "react", "typescript", "node.js", "unity", "c#", "game developer", "tailwind css"],
+  authors: [{ name: "Jovial Wahyu" }],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
-    title: "Jovial | Web Development Enthusiast & Full Stack Developer",
-    description: "Portfolio Jovial - Web Development Enthusiast & Full Stack Developer yang berfokus pada pengembangan aplikasi web modern, Next.js, React, TypeScript, Node.js, dan database.",
+    title: "Jovial Wahyu — Personal Portfolio",
+    description: "Portfolio Jovial Wahyu - Web Development Enthusiast & Full Stack Developer yang berfokus pada pengembangan aplikasi web modern, Next.js, React, TypeScript, Node.js, dan database.",
     type: "website",
   },
 };
