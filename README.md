@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portofolio Modern (Next.js + Tailwind CSS)
 
-## Getting Started
+Portofolio web modern, cepat, dan responsif yang siap langsung di-deploy ke **Vercel**.
 
-First, run the development server:
+## 🌟 Fitur Unggulan
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- ⚡ **Next.js 16 + React 19 (App Router)**: Performa ultra-cepat & SEO optimal.
+- 🎨 **Tailwind CSS**: Styling modern dengan glassmorphism, glowing gradients, dan transisi halus.
+- 🌓 **Dark / Light Mode Toggle**: Beralih tema secara mulus dengan penyimpanan preferensi otomatis di `localStorage`.
+- 📁 **Pusat Data Terpadu (`src/data/portfolio.ts`)**: Cukup edit 1 file untuk mengubah seluruh nama, bio, foto, keahlian, proyek, dan link sosial media Anda.
+- 📱 **100% Responsif**: Tampilan sempurna di perangkat Smartphone, Tablet, hingga Layar Desktop Lebar.
+- ✉️ **Interactive Contact Form**: Form kontak interaktif dengan efek perayaan animasi (*confetti*) dan tombol salin email instan.
+- 🚀 **1-Click Vercel Deploy**: Siap langsung dipublikasikan ke Vercel tanpa konfigurasi rumit.
+
+---
+
+## 🛠️ Cara Mengubah Data Portofolio Anda
+
+Buka file:
+```
+src/data/portfolio.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Di dalam file tersebut, Anda bisa dengan mudah mengubah:
+- `personal`: Nama, jabatan/role, ringkasan bio, email, nomor kontak, link sosial media (GitHub, LinkedIn, Instagram, dll.).
+- `stats`: Angka statistik pencapaian Anda.
+- `services`: Bidang layanan atau keahlian utama yang Anda tawarkan.
+- `skillCategories`: Daftar teknologi dan tingkat keahlian (*Frontend*, *Backend*, *Tools*).
+- `projects`: Daftar proyek portofolio, deskripsi, gambar preview, link live demo, dan link GitHub repository.
+- `experiences`: Riwayat karier pekerjaan dan pendidikan/sertifikasi.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Cara Menjalankan di Lokal (Development)
 
-## Learn More
+1. Buka terminal di folder proyek:
+   ```bash
+   cd portfolio
+   ```
+2. Jalankan development server:
+   ```bash
+   npm run dev
+   ```
+3. Buka browser di [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Cara Deploy ke Vercel (Gratis)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Metode 1: Hubungkan dengan GitHub (Rekomendasi)
+1. Buat repository baru di [GitHub](https://github.com/new).
+2. Jalankan perintah berikut di terminal folder proyek:
+   ```bash
+   git add .
+   git commit -m "Portofolio siap rilis"
+   git branch -M main
+   git remote add origin https://github.com/USERNAME_ANDA/NAMA_REPO.git
+   git push -u origin main
+   ```
+3. Buka [Vercel](https://vercel.com/new), login menggunakan akun GitHub Anda.
+4. Pilih repository portofolio yang baru di-push, lalu klik **Deploy**.
+5. Selesai! Portofolio Anda akan online dengan domain gratis `https://nama-proyek.vercel.app`.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Metode 2: Deploy Cepat via Vercel CLI
+Jalankan perintah ini di terminal:
+```bash
+npx vercel
+```
+Ikuti instruksi login di browser dan tekan **Enter** untuk semua pengaturan default.
