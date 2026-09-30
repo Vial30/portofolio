@@ -80,7 +80,7 @@ export const portfolioData: PortfolioData = {
     availability: "Terbuka untuk Peluang Mobile Software Engineer & Web Development",
     email: "jovialwahyu18@gmail.com",
     phone: "+62 822-2311-6451",
-    resumeUrl: "#",
+    resumeUrl: "/jovial_resume.pdf",
     socials: {
       github: "https://github.com/Vial30",
       gitlab: "https://gitlab.com/vial300604",

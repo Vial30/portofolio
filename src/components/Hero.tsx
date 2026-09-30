@@ -47,6 +47,7 @@ export default function Hero() {
 
               <a
                 href={personal.resumeUrl}
+                download="Jovial_Wahyu_Aji_Pradhana_CV.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 text-sm font-medium transition-colors min-h-[44px]"
