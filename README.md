@@ -7,6 +7,7 @@ Portofolio web modern berbasis **Next.js 16 (App Router)** dan **Tailwind CSS** 
 - **Keahlian Utama**: Mobile App Software Engineer (React Native, Expo SDK 57, Expo Camera hardware scanner, FCM Push Notifications, Stallion Over-The-Air updates, state management Zustand).
 - **Keahlian Web & Backend**: Web Developer & Backend Engineer (PHP, Laravel, RESTful APIs, Eloquent ORM, Next.js, TypeScript, MySQL, PostgreSQL).
 - **Riset Cerdas & AI**: Deep Learning terapan (MediaPipe landmark spatio-temporal, PyTorch Bi-LSTM, WebSocket real-time inferensi).
+- **Pendidikan**: Lulusan S1 Informatika, Universitas Muhammadiyah Semarang (UNIMUS) (2022 - 2026).
 
 ## 📱 3 Proyek Unggulan
 
