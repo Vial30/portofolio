@@ -3,8 +3,8 @@ export interface Project {
   title: string;
   tagline: string;
   description: string;
-  category: "Mobile" | "Fullstack" | "Frontend" | "Tools";
-  platform: "Android / iOS" | "Web App" | "Cross-Platform";
+  category: "Mobile";
+  platform: "Android / iOS";
   image: string;
   tags: string[];
   demoUrl?: string;
@@ -45,13 +45,14 @@ export interface PortfolioData {
     location: string;
     availability: string;
     email: string;
-    phone?: string;
+    phone: string;
     resumeUrl: string;
     socials: {
       github: string;
       gitlab?: string;
       linkedin: string;
-      whatsapp?: string;
+      instagram?: string;
+      whatsapp: string;
     };
   };
   metrics: {
@@ -70,96 +71,149 @@ export interface PortfolioData {
 
 export const portfolioData: PortfolioData = {
   personal: {
-    name: "Jovian",
-    title: "Fullstack & Mobile Software Engineer",
-    tagline: "Merancang dan membangun aplikasi mobile dan web berkinerja tinggi dengan arsitektur kode modular, performa native, dan integrasi backend yang andal.",
-    bio: "Software engineer dengan fokus pada pengembangan aplikasi mobile menggunakan React Native (Expo) serta aplikasi web modern berbasis Next.js dan TypeScript. Berpengalaman membangun aplikasi skala kampus yang digunakan oleh civitas akademika, mulai dari sistem presensi QR code berbasis kamera hingga reservasi sarana terintegrasi dengan push notification dan workflow persetujuan berjenjang.",
+    name: "Jovial Wahyu Aji Pradhana",
+    title: "Mobile & Software Engineer",
+    tagline: "Spesialis rekayasa aplikasi mobile (React Native & Expo) dan integrasi sistem cerdas dengan fokus pada hardware device, performa native, dan arsitektur kode modular.",
+    bio: "Mahasiswa S1 Teknik Informatika di Universitas Muhammadiyah Semarang (UNIMUS) sekaligus software engineer yang berfokus pada rekayasa aplikasi mobile dan integrasi deep learning. Mengembangkan aplikasi mobile nyata untuk civitas akademika seperti Dipma UNIMUS Mobile (presensi QR hardware) dan Smart Room UNIMUS (reservasi fasilitas kampus terintegrasi FCM), serta riset mandiri sistem pengenalan bahasa isyarat IsyaratKu BISINDO.",
     location: "Semarang, Indonesia",
-    availability: "Terbuka untuk posisi Full-time & Proyek Rekayasa Perangkat Lunak",
-    email: "jovian.dev@example.com",
-    phone: "+62 812 3456 7890",
+    availability: "Terbuka untuk Kolaborasi Proyek & Peluang Karir Mobile / Software Engineer",
+    email: "jovialwahyu18@gmail.com",
+    phone: "+62 822-2311-6451",
     resumeUrl: "#",
     socials: {
-      github: "https://github.com",
+      github: "https://github.com/Vial30",
       gitlab: "https://gitlab.com/vial300604",
-      linkedin: "https://linkedin.com",
-      whatsapp: "https://wa.me/6281234567890",
+      linkedin: "https://www.linkedin.com/in/jovialwahyu",
+      instagram: "https://www.instagram.com/jovialwahyuu_/",
+      whatsapp: "https://wa.me/6282223116451",
     },
   },
   metrics: [
     {
-      label: "Aplikasi Mobile Terdeploy",
-      value: "2",
-      detail: "Smart Room & Dipma Unimus Mobile untuk civitas kampus",
+      label: "Karya Rekayasa Nyata",
+      value: "3 Proyek",
+      detail: "IsyaratKu BISINDO, Dipma UNIMUS Mobile, dan Smart Room UNIMUS",
     },
     {
-      label: "Stack Utama",
-      value: "React Native + Next.js",
-      detail: "TypeScript end-to-end dengan arsitektur modular",
+      label: "Ekosistem Mobile",
+      value: "React Native & Expo",
+      detail: "Expo SDK 57, TypeScript strict, React Navigation, dan state management",
     },
     {
-      label: "Workflow & Integrasi",
-      value: "FCM & OTA",
-      detail: "Push notification realtime dan continuous updates via Stallion",
+      label: "Integrasi Perangkat",
+      value: "Hardware & Realtime",
+      detail: "Kamera pemindai QR, FCM Push Notifications, dan streaming WebSocket",
     },
     {
-      label: "Standar Kode",
-      value: "TypeScript Strict",
-      detail: "Tipe data terstruktur, reusable components, dan zero build errors",
+      label: "Basis Akademik",
+      value: "S1 Teknik Informatika",
+      detail: "Universitas Muhammadiyah Semarang (UNIMUS), fokus mobile dan AI",
     },
   ],
   engineeringPrinciples: [
     {
-      title: "Arsitektur Modular & Strict Typing",
-      description: "Pemisahan lapisan antara presentasi UI, manajemen state, dan API client dengan TypeScript strict untuk meminimalkan runtime error.",
+      title: "Integrasi Native Hardware Presisi",
+      description: "Pemanfaatan modul kamera perangkat keras secara langsung untuk pemindaian instan, pembacaan barcode, serta pengolahan frame visual berlatensi rendah.",
     },
     {
-      title: "Performa Native & Pengalaman Mobile",
-      description: "Pemanfaatan fitur native perangkat seperti kamera untuk pemindaian kode, push notifications FCM, dan manajemen sesi lokal terenkripsi.",
+      title: "Komunikasi Real-Time & Notifikasi",
+      description: "Penerapan WebSocket streaming untuk inferensi data kontinu dan Firebase Cloud Messaging (FCM) untuk penanganan alur kerja persetujuan secara instan.",
     },
     {
       title: "Continuous Delivery & OTA Updates",
-      description: "Implementasi Over-The-Air updates untuk memperbarui aplikasi mobile secara instan tanpa menunggu siklus rilis panjang di app store.",
+      description: "Implementasi pembaruan Over-The-Air (OTA) via Stallion untuk mendistribusikan patch perbaikan ke perangkat pengguna tanpa siklus rilis app store yang panjang.",
     },
     {
-      title: "Desain Antarmuka Berorientasi Fungsi",
-      description: "Navigasi intuitif berbasis alur kerja pengguna nyata dengan feedback instan, layout responsif, dan standar aksesibilitas tinggi.",
+      title: "Arsitektur Modular & Strict Typing",
+      description: "Pemisahan lapisan antara modul UI, state aplikasi, dan komunikasi API client dengan TypeScript strict untuk menjamin keandalan saat runtime.",
     },
   ],
   skillCategories: [
     {
       name: "Mobile Development",
-      description: "Pengembangan aplikasi lintas platform untuk Android dan iOS",
+      description: "Pengembangan aplikasi lintas platform menggunakan ekosistem React Native dan Expo",
       skills: [
-        { name: "React Native", level: "Advanced", context: "Expo SDK 57, Paper UI, Custom Components" },
-        { name: "Expo Ecosystem", level: "Advanced", context: "Expo Camera, Notifications, FileSystem, Print" },
-        { name: "React Navigation", level: "Advanced", context: "Native Stack, Bottom Tabs, Deep Linking" },
-        { name: "Push Notifications", level: "Proficient", context: "Firebase Cloud Messaging (FCM)" },
-        { name: "Stallion OTA Updates", level: "Proficient", context: "Over-the-air binary patch delivery" },
+        { name: "React Native", level: "Advanced", context: "Expo SDK 57, Paper UI, Custom UI Components" },
+        { name: "Expo Camera", level: "Advanced", context: "Pemindaian barcode QR hardware dan streaming frame" },
+        { name: "Push Notifications", level: "Proficient", context: "Firebase Cloud Messaging (FCM) dan handler navigasi" },
+        { name: "React Navigation", level: "Advanced", context: "Native Stack, Bottom Tabs, Parameter Passing" },
+        { name: "Stallion OTA", level: "Proficient", context: "Over-the-air binary patch delivery tanpa compile ulang" },
+        { name: "State Management", level: "Advanced", context: "Zustand, React Context, AsyncStorage terenkripsi" },
       ],
     },
     {
-      name: "Frontend & Web Architecture",
-      description: "Pembangunan web application modern dan responsif",
+      name: "AI / Deep Learning & Backend",
+      description: "Integrasi model inferensi deep learning dan penyedia layanan backend",
       skills: [
-        { name: "Next.js (App Router)", level: "Advanced", context: "Server Components, API routes, Turbopack" },
-        { name: "React.js", level: "Advanced", context: "Custom hooks, state patterns, performance tuning" },
-        { name: "TypeScript", level: "Advanced", context: "Strict typing, generic interfaces, type guards" },
-        { name: "Tailwind CSS", level: "Advanced", context: "Design tokens, responsive utility first, dark mode" },
+        { name: "PyTorch & Deep Learning", level: "Proficient", context: "Dual-Stream Bi-LSTM, Temporal Attention, evaluasi LOSO" },
+        { name: "MediaPipe", level: "Proficient", context: "Ekstraksi spasio-temporal 141 koordinat landmark tangan dan pose" },
+        { name: "FastAPI & WebSocket", level: "Proficient", context: "Real-time low-latency streaming pipeline (~2.3 ms inferensi)" },
+        { name: "Python", level: "Proficient", context: "Data preprocessing, ekstraksi fitur spasio-temporal, model training" },
+        { name: "Node.js & REST APIs", level: "Proficient", context: "Integrasi client-server, parsing payload, multipart upload" },
       ],
     },
     {
-      name: "Backend, Database & DevOps",
-      description: "Layanan server, basis data, dan pipeline deployment",
+      name: "Web, Tools & Workflow",
+      description: "Perkakas rekayasa, version control, dan arsitektur web pendukung",
       skills: [
-        { name: "Node.js & Express", level: "Advanced", context: "RESTful endpoints, middleware, auth flow" },
-        { name: "PostgreSQL & Prisma", level: "Proficient", context: "Relational modeling, migrations, query tuning" },
-        { name: "Git & Version Control", level: "Advanced", context: "GitLab, GitHub, branching strategy, CI/CD" },
-        { name: "Vercel & Cloud Hosting", level: "Advanced", context: "Edge deployment, environment config, analytics" },
+        { name: "TypeScript", level: "Advanced", context: "Strict type safety, generic interfaces, zero build errors" },
+        { name: "Next.js & React", level: "Proficient", context: "App Router, modern components, clean architecture" },
+        { name: "Tailwind CSS", level: "Advanced", context: "Design tokens, utility-first, simple modern monochrome UI" },
+        { name: "Git, GitLab & GitHub", level: "Advanced", context: "Version control, branching strategy, remote repository" },
+        { name: "Vercel Deployment", level: "Advanced", context: "Production hosting, continuous deployment, custom domain" },
       ],
     },
   ],
   projects: [
+    {
+      id: "isyaratku-bisindo",
+      title: "Isyaratku: Real-Time BISINDO Sign Recognition",
+      tagline: "Sistem pengenalan 32 kosakata Bahasa Isyarat Indonesia (BISINDO) real-time berbasis Deep Residual Bi-LSTM dan streaming WebSocket.",
+      description: "Sistem pengenalan bahasa isyarat BISINDO tingkat kata secara real-time dengan paradigma Client-Server. Frontend mobile client dibangun menggunakan React Native Expo (TypeScript) yang melakukan streaming frame kamera via WebSocket ke backend inferensi FastAPI dan PyTorch. Mengintegrasikan ekstraksi landmark MediaPipe, kalkulasi vektor kecepatan spasio-temporal, serta ensemble model Dual-Stream Deep Residual Bi-LSTM dengan Temporal Attention yang mencapai akurasi evaluasi LOSO Cross-Validation 98.99% dan latensi inferensi ~2.3 ms.",
+      category: "Mobile",
+      platform: "Android / iOS",
+      image: "/projects/isyaratku_simple.jpg",
+      tags: [
+        "React Native",
+        "Expo SDK",
+        "TypeScript",
+        "FastAPI",
+        "PyTorch",
+        "MediaPipe",
+        "WebSocket",
+        "Bi-LSTM",
+        "Python",
+      ],
+      githubUrl: "https://github.com/Vial30/isyaratku_bisindo",
+      featured: true,
+      architectureHighlights: [
+        "Akurasi 98.99% pada evaluasi Leave-One-Subject-Out (LOSO) Cross-Validation.",
+        "Arsitektur Dual-Stream Deep Residual Bi-LSTM dengan Temporal Attention dan Soft Voting Fusion.",
+        "Komunikasi streaming real-time berlatensi ultra-rendah (~2.3 ms) memanfaatkan protokol WebSocket.",
+        "Ekstraksi fitur spasio-temporal 141 titik koordinat MediaPipe dipadukan dengan 141 vektor kecepatan kinematik.",
+        "Pipeline client mobile responsif yang menjaga konsistensi frame rate saat pengambilan data visual.",
+      ],
+      stats: { label: "Evaluasi & Latensi", value: "98.99% Akurasi LOSO (~2.3ms)" },
+    },
+    {
+      id: "dipma-mobile",
+      title: "Dipma UNIMUS Mobile: Presensi Perkuliahan QR Code",
+      tagline: "Aplikasi mobile presensi mahasiswa resmi UNIMUS berbasis pemindaian QR hardware camera dan pembaruan OTA.",
+      description: "Aplikasi mobile presensi mahasiswa resmi Universitas Muhammadiyah Semarang (UNIMUS). Mengintegrasikan pemindai QR code berbasis hardware camera perangkat dengan latensi rendah, sinkronisasi jadwal mata kuliah harian, riwayat kehadiran presisi, serta dukungan pembaruan Over-The-Air tanpa ketergantungan rilis app store.",
+      category: "Mobile",
+      platform: "Android / iOS",
+      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&auto=format&fit=crop&q=80",
+      tags: ["React Native", "Expo SDK 57", "Expo Camera", "React Native Paper", "Stallion OTA", "Axios"],
+      featured: true,
+      architectureHighlights: [
+        "Pemindai barcode QR code berkecepatan tinggi dengan integrasi native hardware camera.",
+        "Integrasi Stallion OTA updates untuk patch continuous delivery instan ke perangkat pengguna.",
+        "Sinkronisasi jadwal perkuliahan harian dan mingguan langsung dengan sistem informasi akademik.",
+        "Pencatatan riwayat presensi dengan timestamp presisi dan status verifikasi kehadiran.",
+        "Penyimpanan sesi lokal terenkripsi dengan penanganan konektivitas jaringan secara aman.",
+      ],
+      stats: { label: "Metode Presensi", value: "QR Hardware Camera Scanner" },
+    },
     {
       id: "smartroom-unimus",
       title: "Smart Room UNIMUS: Reservasi & Manajemen Ruang Kampus",
@@ -180,108 +234,26 @@ export const portfolioData: PortfolioData = {
       ],
       stats: { label: "Target Pengguna", value: "Dosen, Mahasiswa, & Unit RT Kampus" },
     },
-    {
-      id: "dipma-mobile",
-      title: "Dipma UNIMUS Mobile: Presensi Perkuliahan QR Code",
-      tagline: "Aplikasi mobile presensi mahasiswa berbasis pemindaian QR code hardware camera dan pembaruan OTA.",
-      description: "Aplikasi mobile presensi mahasiswa resmi Universitas Muhammadiyah Semarang (UNIMUS). Mengintegrasikan pemindai QR code berbasis kamera perangkat dengan latensi rendah, sinkronisasi jadwal mata kuliah harian, riwayat kehadiran presisi, serta dukungan pembaruan Over-The-Air tanpa ketergantungan rilis app store.",
-      category: "Mobile",
-      platform: "Android / iOS",
-      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&auto=format&fit=crop&q=80",
-      tags: ["React Native", "Expo SDK 57", "Expo Camera", "React Native Paper", "Stallion OTA", "Axios"],
-      featured: true,
-      architectureHighlights: [
-        "Pemindai barcode QR code berkecepatan tinggi dengan integrasi native hardware camera.",
-        "Integrasi Stallion OTA updates untuk patch continuous delivery instan ke perangkat pengguna.",
-        "Sinkronisasi jadwal perkuliahan harian dan mingguan langsung dengan sistem informasi akademik.",
-        "Pencatatan riwayat presensi dengan timestamp presisi dan status verifikasi kehadiran.",
-        "Penyimpanan sesi lokal terenkripsi dengan penanganan konektivitas jaringan secara aman.",
-      ],
-      stats: { label: "Metode Presensi", value: "QR Hardware Camera Scanner" },
-    },
-    {
-      id: "registrasi-yudisium",
-      title: "Portal Registrasi & Verifikasi Akademik",
-      tagline: "Sistem administrasi pendaftaran yudisium dan verifikasi berkas kelulusan mahasiswa terpadu.",
-      description: "Platform web administrasi data mahasiswa untuk proses validasi berkas kelulusan otomatis, pelacakan alur persetujuan berkas akademik, dan notifikasi kelengkapan persyaratan secara transparan.",
-      category: "Fullstack",
-      platform: "Web App",
-      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&auto=format&fit=crop&q=80",
-      tags: ["Next.js", "Node.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
-      githubUrl: "https://github.com",
-      featured: false,
-      architectureHighlights: [
-        "Validasi dokumen administrasi kelulusan berbasis kriteria terstruktur.",
-        "Role-based access control untuk Administrator, Dosen Penguji, dan Mahasiswa.",
-        "Dashboard pemantauan status berkas dengan timeline tahapan verifikasi yang jelas.",
-      ],
-      stats: { label: "Tipe Sistem", value: "Portal Akademik Enterprise" },
-    },
-    {
-      id: "saas-analytics",
-      title: "Platform Dashboard & Telemetri Data",
-      tagline: "Sistem visualisasi data performa dan analitik metrik dengan antarmuka modular.",
-      description: "Aplikasi dashboard analitik web dengan visualisasi grafik interaktif, pemrosesan metrik performa, manajemen hak akses tim, dan penyajian data statistik tanpa jeda.",
-      category: "Fullstack",
-      platform: "Web App",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop&q=80",
-      tags: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Chart.js"],
-      githubUrl: "https://github.com",
-      featured: false,
-      architectureHighlights: [
-        "Antarmuka modular dengan dukungan mode gelap dan terang tanpa flicker.",
-        "Penyajian data agregat dengan visualisasi interaktif.",
-        "Ekspor ringkasan laporan dalam format dokumen terstruktur.",
-      ],
-      stats: { label: "Fokus Arsitektur", value: "Modular Dashboard & Data Chart" },
-    },
-    {
-      id: "spotify-lyrics-sync",
-      title: "Music & Lyrics Synchronization Engine",
-      tagline: "Aplikasi sinkronisasi lirik audio presisi tinggi dengan visualizer frekuensi interaktif.",
-      description: "Aplikasi web pemutar audio yang memproses dan menyinkronkan lirik kata demi kata secara real-time dengan parser format LRC dan integrasi Web Audio API.",
-      category: "Tools",
-      platform: "Web App",
-      image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1200&auto=format&fit=crop&q=80",
-      tags: ["TypeScript", "React", "Web Audio API", "Tailwind CSS"],
-      githubUrl: "https://github.com",
-      featured: false,
-      architectureHighlights: [
-        "Algoritma parsing file lirik lrc dengan sinkronisasi timestamp presisi milidetik.",
-        "Visualizer audio realtime memanfaatkan Web Audio AnalyserNode.",
-      ],
-      stats: { label: "Engine Audio", value: "Realtime LRC Timestamp Parser" },
-    },
   ],
   experiences: [
     {
       id: "exp-1",
-      role: "Mobile & Fullstack Software Engineer",
-      company: "Pengembangan Proyek Sistem Kampus (UNIMUS)",
+      role: "Mobile Software Engineer (Proyek Kampus & Riset Mandiri)",
+      company: "UNIMUS & Riset Mandiri",
       period: "2023 - Sekarang",
       location: "Semarang, Indonesia",
-      description: "Merancang dan mengimplementasikan aplikasi mobile produksi Smart Room UNIMUS dan Dipma UNIMUS Mobile dengan React Native Expo. Mengembangkan modul QR scanner berbasis hardware kamera, integrasi push notification Firebase Cloud Messaging, dan continuous OTA update deployment.",
-      skills: ["React Native", "Expo SDK", "TypeScript", "FCM", "Stallion OTA", "REST APIs"],
-      type: "work",
-    },
-    {
-      id: "exp-2",
-      role: "Web Application Developer",
-      company: "Proyek Rekayasa Perangkat Lunak Mandiri",
-      period: "2022 - 2023",
-      location: "Indonesia",
-      description: "Membangun sistem web dinamis berbasis Next.js, Node.js, dan arsitektur database relasional PostgreSQL. Menerapkan pengujian kode, antarmuka responsif, dan deployment otomatis pada infrastruktur cloud Vercel.",
-      skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Git"],
+      description: "Mengembangkan aplikasi mobile produksi skala kampus (Dipma UNIMUS Mobile dan Smart Room UNIMUS) menggunakan React Native dan Expo. Mengimplementasikan modul pemindai QR berbasis kamera hardware, push notification via Firebase Cloud Messaging, dan continuous delivery OTA via Stallion. Merancang arsitektur client-server aplikasi IsyaratKu BISINDO berbasis streaming WebSocket dan deep learning PyTorch.",
+      skills: ["React Native", "Expo SDK 57", "TypeScript", "FCM", "Stallion OTA", "FastAPI", "WebSocket", "PyTorch"],
       type: "work",
     },
     {
       id: "edu-1",
-      role: "Pendidikan Tinggi Teknik Informatika / Ilmu Komputer",
-      company: "Universitas",
-      period: "2021 - 2025",
-      location: "Indonesia",
-      description: "Fokus pada rekayasa perangkat lunak, arsitektur sistem informasi, pemrograman mobile dan web, serta struktur data dan algoritma.",
-      skills: ["Software Engineering", "Mobile App Development", "Database Systems", "Algorithms"],
+      role: "S1 Teknik Informatika",
+      company: "Universitas Muhammadiyah Semarang (UNIMUS)",
+      period: "2022 - Sekarang (Estimasi 2026)",
+      location: "Semarang, Indonesia",
+      description: "Menempuh pendidikan sarjana dengan fokus pada Rekayasa Perangkat Lunak, Pemrograman Aplikasi Mobile, Sistem Basis Data, serta Riset Kecerdasan Buatan (Computer Vision & Deep Learning untuk pengenalan bahasa isyarat).",
+      skills: ["Software Engineering", "Mobile Development", "Computer Vision", "Deep Learning", "Algorithms & Data Structures"],
       type: "education",
     },
   ],

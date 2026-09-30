@@ -22,7 +22,7 @@ export default function Footer() {
               <span className="text-zinc-400 font-normal font-mono">© {new Date().getFullYear()}</span>
             </div>
             <p className="text-xs text-zinc-500 dark:text-zinc-400">
-              Dibangun dengan Next.js App Router, TypeScript, Tailwind CSS, dan siap di-deploy ke Vercel.
+              Dibangun dengan Next.js App Router, TypeScript, dan Tailwind CSS.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ export default function Footer() {
                 href={personal.socials.github}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="GitHub Jovian"
+                aria-label="GitHub Jovial Wahyu Aji Pradhana"
                 className="p-2.5 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               >
                 <GithubIcon className="w-4 h-4" />
@@ -44,7 +44,7 @@ export default function Footer() {
                 href={personal.socials.gitlab}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="GitLab Jovian"
+                aria-label="GitLab Jovial Wahyu Aji Pradhana"
                 className="p-2.5 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               >
                 <GitlabIcon className="w-4 h-4" />
@@ -55,7 +55,7 @@ export default function Footer() {
                 href={personal.socials.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="LinkedIn Jovian"
+                aria-label="LinkedIn Jovial Wahyu Aji Pradhana"
                 className="p-2.5 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               >
                 <LinkedinIcon className="w-4 h-4" />
@@ -66,7 +66,7 @@ export default function Footer() {
                 href={personal.socials.whatsapp}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="WhatsApp Jovian"
+                aria-label="WhatsApp Jovial Wahyu Aji Pradhana"
                 className="p-2.5 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               >
                 <WhatsappIcon className="w-4 h-4" />

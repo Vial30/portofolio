@@ -6,7 +6,6 @@ import { GithubIcon, GitlabIcon, LinkedinIcon, WhatsappIcon } from "./SocialIcon
 
 export default function Hero() {
   const { personal, metrics, projects } = portfolioData;
-  const mobileProjects = projects.filter((p) => p.category === "Mobile");
 
   return (
     <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 border-b border-zinc-200 dark:border-zinc-800/80">
@@ -39,7 +38,7 @@ export default function Hero() {
                 href="#projects"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 font-medium text-sm transition-colors min-h-[44px]"
               >
-                <span>Lihat Karya & Proyek</span>
+                <span>Lihat 3 Karya Unggulan</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
@@ -75,7 +74,7 @@ export default function Hero() {
                     href={personal.socials.github}
                     target="_blank"
                     rel="noreferrer"
-                    aria-label="Profil GitHub"
+                    aria-label="Profil GitHub Jovial"
                     className="p-2.5 rounded-lg text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
                   >
                     <GithubIcon className="w-4 h-4" />
@@ -86,7 +85,7 @@ export default function Hero() {
                     href={personal.socials.gitlab}
                     target="_blank"
                     rel="noreferrer"
-                    aria-label="Profil GitLab"
+                    aria-label="Profil GitLab Jovial"
                     className="p-2.5 rounded-lg text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
                   >
                     <GitlabIcon className="w-4 h-4" />
@@ -97,7 +96,7 @@ export default function Hero() {
                     href={personal.socials.linkedin}
                     target="_blank"
                     rel="noreferrer"
-                    aria-label="Profil LinkedIn"
+                    aria-label="Profil LinkedIn Jovial"
                     className="p-2.5 rounded-lg text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
                   >
                     <LinkedinIcon className="w-4 h-4" />
@@ -108,7 +107,7 @@ export default function Hero() {
                     href={personal.socials.whatsapp}
                     target="_blank"
                     rel="noreferrer"
-                    aria-label="Hubungi WhatsApp"
+                    aria-label="Hubungi WhatsApp Jovial"
                     className="p-2.5 rounded-lg text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
                   >
                     <WhatsappIcon className="w-4 h-4" />
@@ -118,19 +117,19 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column: Real Mobile App Highlight Card (Clean & Modern) */}
+          {/* Right Column: 3 Real Mobile Projects Highlight Card */}
           <div className="lg:col-span-5 flex flex-col gap-4">
             <div className="p-5 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800">
               <div className="flex items-center justify-between mb-3 pb-2 border-b border-zinc-200/80 dark:border-zinc-800">
                 <span className="text-xs font-mono uppercase tracking-wider text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5 font-semibold">
                   <Smartphone className="w-3.5 h-3.5 text-zinc-500" />
-                  <span>Karya Mobile Unggulan</span>
+                  <span>Karya Mobile & AI Unggulan</span>
                 </span>
                 <span className="text-[10px] text-zinc-500 dark:text-zinc-400 font-mono">React Native</span>
               </div>
 
               <div className="space-y-3">
-                {mobileProjects.map((p) => (
+                {projects.map((p) => (
                   <a
                     key={p.id}
                     href={`#${p.id}`}
@@ -164,7 +163,7 @@ export default function Hero() {
             <div className="p-3.5 rounded-lg bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 flex items-start gap-2.5">
               <Check className="w-4 h-4 text-zinc-700 dark:text-zinc-300 flex-shrink-0 mt-0.5" />
               <p className="leading-relaxed">
-                Diuji pada lingkungan fisik kampus dengan kamera native QR scanner, push notification FCM, dan update Over-The-Air.
+                Diuji pada lingkungan fisik dengan kamera native QR scanner, inferensi deep learning spasio-temporal, dan push notification FCM.
               </p>
             </div>
           </div>

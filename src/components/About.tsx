@@ -9,9 +9,9 @@ export default function About() {
   const getPrincipleIcon = (index: number) => {
     switch (index) {
       case 0:
-        return <Code2 className="w-4 h-4 text-zinc-700 dark:text-zinc-300" />;
-      case 1:
         return <Smartphone className="w-4 h-4 text-zinc-700 dark:text-zinc-300" />;
+      case 1:
+        return <Code2 className="w-4 h-4 text-zinc-700 dark:text-zinc-300" />;
       case 2:
         return <GitBranch className="w-4 h-4 text-zinc-700 dark:text-zinc-300" />;
       default:
@@ -37,30 +37,30 @@ export default function About() {
           <div className="lg:col-span-6 space-y-4 text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm sm:text-base">
             <p>{personal.bio}</p>
             <p>
-              Dalam setiap pengembangan, prioritas saya adalah stabilitas sistem, keterbacaan kode, serta kemudahan proses deployment. Baik itu menangani komunikasi native di React Native maupun membangun arsitektur server di Next.js, saya memastikan bahwa aplikasi dapat diuji dan dipelihara dalam jangka panjang.
+              Dalam setiap pengembangan, prioritas saya adalah stabilitas sistem pada perangkat fisik nyata, ketahanan alur logika, serta kemudahan proses pembaruan. Baik itu menangani komunikasi native di React Native maupun mengintegrasikan streaming inferensi deep learning secara real-time, saya memastikan aplikasi dapat diuji dan dipelihara dalam jangka panjang.
             </p>
           </div>
 
           <div className="lg:col-span-6 p-6 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800">
             <h3 className="text-xs font-mono uppercase tracking-wider text-zinc-800 dark:text-zinc-200 font-semibold mb-4">
-              Spesialisasi Utama
+              Spesialisasi Rekayasa
             </h3>
             <ul className="space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
               <li className="flex items-start gap-2.5">
                 <Check className="w-4 h-4 text-zinc-700 dark:text-zinc-300 flex-shrink-0 mt-0.5" />
-                <span>Pengembangan Aplikasi Mobile lintas platform (React Native & Expo SDK 57)</span>
+                <span>Pengembangan Aplikasi Mobile (React Native & Expo SDK 57)</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <Check className="w-4 h-4 text-zinc-700 dark:text-zinc-300 flex-shrink-0 mt-0.5" />
-                <span>Integrasi Native Hardware: Kamera QR Scanner, Notifikasi FCM, dan Berkas PDF</span>
+                <span>Integrasi Native Hardware: Kamera Pemindai QR & Push Notifications FCM</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <Check className="w-4 h-4 text-zinc-700 dark:text-zinc-300 flex-shrink-0 mt-0.5" />
-                <span>Arsitektur Fullstack Web berbasis Next.js App Router, TypeScript, dan PostgreSQL</span>
+                <span>Deep Learning & Spatio-Temporal Recognition (PyTorch, MediaPipe, Bi-LSTM)</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <Check className="w-4 h-4 text-zinc-700 dark:text-zinc-300 flex-shrink-0 mt-0.5" />
-                <span>Continuous Deployment: Over-The-Air (OTA) updates dan cloud hosting di Vercel</span>
+                <span>Continuous Delivery: Over-The-Air (OTA) updates via Stallion & TypeScript Strict</span>
               </li>
             </ul>
           </div>

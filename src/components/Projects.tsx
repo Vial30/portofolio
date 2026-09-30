@@ -3,58 +3,35 @@
 import { useState } from "react";
 import { portfolioData, Project } from "@/data/portfolio";
 import ProjectModal from "./ProjectModal";
-import { ExternalLink, ArrowUpRight, Smartphone, Globe, Shield } from "lucide-react";
+import { ArrowUpRight, Smartphone, Shield } from "lucide-react";
 import Image from "next/image";
 import { GithubIcon, GitlabIcon } from "./SocialIcons";
 
 export default function Projects() {
   const { projects } = portfolioData;
-  const [selectedCategory, setSelectedCategory] = useState<string>("Semua");
   const [activeModalProject, setActiveModalProject] = useState<Project | null>(null);
-
-  const categories = ["Semua", "Mobile", "Fullstack", "Tools"];
-
-  const filteredProjects =
-    selectedCategory === "Semua"
-      ? projects
-      : projects.filter((p) => p.category === selectedCategory);
 
   return (
     <section id="projects" className="py-20 md:py-28 border-b border-zinc-200 dark:border-zinc-800/80">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="max-w-3xl mb-10">
-          <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-2 block">
-            Portofolio & Rekayasa Sistem
-          </span>
+        <div className="max-w-3xl mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs font-mono mb-3">
+            <span>Rekayasa Mobile & AI</span>
+            <span>•</span>
+            <span>3 Proyek Nyata</span>
+          </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-3">
-            Aplikasi Produksi & Proyek Unggulan
+            Karya Rekayasa Perangkat Lunak
           </h2>
           <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-            Daftar aplikasi mobile dan sistem web yang dirancang dengan arsitektur modular, performa native, dan integrasi backend nyata.
+            Aplikasi mobile produksi dan riset deep learning yang dirancang dengan integrasi hardware kamera, notifikasi push FCM, pembaruan OTA, serta streaming WebSocket real-time.
           </p>
         </div>
 
-        {/* Category Filter Pills (min 44px target) */}
-        <div className="flex flex-wrap gap-2 mb-10">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-colors min-h-[44px] ${
-                selectedCategory === cat
-                  ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
-                  : "bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
-        {/* Projects List: Simple Modern Rhythm */}
+        {/* Projects List */}
         <div className="space-y-8">
-          {filteredProjects.map((project) => (
+          {projects.map((project) => (
             <div
               key={project.id}
               id={project.id}
@@ -74,11 +51,7 @@ export default function Projects() {
                     className="object-cover transition-transform duration-200 group-hover:scale-102"
                   />
                   <div className="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-950/85 text-white text-xs font-mono z-10">
-                    {project.category === "Mobile" ? (
-                      <Smartphone className="w-3.5 h-3.5 text-zinc-300" />
-                    ) : (
-                      <Globe className="w-3.5 h-3.5 text-zinc-300" />
-                    )}
+                    <Smartphone className="w-3.5 h-3.5 text-zinc-300" />
                     <span>{project.platform}</span>
                   </div>
                   {project.stats && (
@@ -173,19 +146,6 @@ export default function Projects() {
                       >
                         <GithubIcon className="w-3.5 h-3.5 text-zinc-600 dark:text-zinc-400" />
                         <span>GitHub</span>
-                      </a>
-                    )}
-
-                    {project.demoUrl && (
-                      <a
-                        href={project.demoUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Buka Live Demo"
-                        className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg text-xs font-medium text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 transition-colors min-h-[44px]"
-                      >
-                        <ExternalLink className="w-3.5 h-3.5" />
-                        <span>Live Demo</span>
                       </a>
                     )}
                   </div>

@@ -3,13 +3,9 @@
 import { useState, useEffect } from "react";
 import { portfolioData } from "@/data/portfolio";
 import ThemeToggle from "./ThemeToggle";
-import { Menu, X, Terminal } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
-interface NavbarProps {
-  onOpenDeployGuide: () => void;
-}
-
-export default function Navbar({ onOpenDeployGuide }: NavbarProps) {
+export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -49,7 +45,7 @@ export default function Navbar({ onOpenDeployGuide }: NavbarProps) {
               {portfolioData.personal.name}
             </span>
             <span className="text-[10px] text-zinc-500 dark:text-zinc-400 font-mono">
-              Software Engineer
+              Mobile & Software Engineer
             </span>
           </div>
         </a>
@@ -69,13 +65,6 @@ export default function Navbar({ onOpenDeployGuide }: NavbarProps) {
 
         {/* Right Actions */}
         <div className="hidden sm:flex items-center gap-2">
-          <button
-            onClick={onOpenDeployGuide}
-            className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-lg border border-zinc-200 dark:border-zinc-700 transition-colors min-h-[44px]"
-          >
-            <Terminal className="w-3.5 h-3.5" />
-            <span>Deploy Guide</span>
-          </button>
           <ThemeToggle />
         </div>
 
@@ -107,18 +96,6 @@ export default function Navbar({ onOpenDeployGuide }: NavbarProps) {
                 {link.label}
               </a>
             ))}
-            <div className="pt-3 border-t border-zinc-200 dark:border-zinc-800 mt-2">
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenDeployGuide();
-                }}
-                className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg text-xs font-medium text-zinc-800 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 min-h-[44px]"
-              >
-                <Terminal className="w-4 h-4" />
-                <span>Panduan Deploy Vercel</span>
-              </button>
-            </div>
           </nav>
         </div>
       )}

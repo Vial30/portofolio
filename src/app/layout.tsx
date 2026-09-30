@@ -15,19 +15,31 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jovialwahyu.vercel.app"),
-  title: "Jovian | Fullstack & Mobile Software Engineer",
-  description: "Portofolio Jovian: Software engineer spesialis aplikasi mobile React Native (Expo) dan web app modern Next.js serta TypeScript.",
-  keywords: ["portfolio", "jovian", "software engineer", "mobile developer", "react native", "expo", "fullstack", "nextjs", "typescript", "tailwind css"],
-  authors: [{ name: "Jovian" }],
+  title: "Jovial Wahyu Aji Pradhana | Mobile & Software Engineer",
+  description: "Portofolio Jovial Wahyu Aji Pradhana: Mobile & Software Engineer spesialis React Native, Expo, dan integrasi sistem cerdas. Pengembang Dipma UNIMUS Mobile, Smart Room UNIMUS, dan IsyaratKu BISINDO.",
+  keywords: [
+    "portfolio",
+    "jovial wahyu",
+    "jovial wahyu aji pradhana",
+    "mobile engineer",
+    "software engineer",
+    "react native",
+    "expo",
+    "unimus",
+    "bisindo",
+    "deep learning",
+    "typescript",
+  ],
+  authors: [{ name: "Jovial Wahyu Aji Pradhana" }],
   openGraph: {
-    title: "Jovian | Fullstack & Mobile Software Engineer",
-    description: "Portofolio Jovian: Software engineer spesialis aplikasi mobile React Native (Expo) dan web app modern Next.js serta TypeScript.",
+    title: "Jovial Wahyu Aji Pradhana | Mobile & Software Engineer",
+    description: "Portofolio Jovial Wahyu Aji Pradhana: Mobile & Software Engineer spesialis React Native, Expo, dan integrasi sistem cerdas. Pengembang Dipma UNIMUS Mobile, Smart Room UNIMUS, dan IsyaratKu BISINDO.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jovian | Fullstack & Mobile Software Engineer",
-    description: "Portofolio Jovian: Software engineer spesialis aplikasi mobile React Native (Expo) dan web app modern Next.js serta TypeScript.",
+    title: "Jovial Wahyu Aji Pradhana | Mobile & Software Engineer",
+    description: "Portofolio Jovial Wahyu Aji Pradhana: Mobile & Software Engineer spesialis React Native, Expo, dan integrasi sistem cerdas. Pengembang Dipma UNIMUS Mobile, Smart Room UNIMUS, dan IsyaratKu BISINDO.",
   },
 };
 
