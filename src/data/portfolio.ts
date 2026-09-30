@@ -177,7 +177,7 @@ export const portfolioData: PortfolioData = {
       description: "Sistem pengenalan bahasa isyarat BISINDO tingkat kata secara real-time dengan paradigma Client-Server. Klien mobile dibangun menggunakan React Native Expo (TypeScript) yang melakukan streaming frame kamera via WebSocket ke backend inferensi FastAPI dan PyTorch. Mengintegrasikan ekstraksi landmark MediaPipe, kalkulasi 141 vektor kecepatan spasio-temporal, serta ensemble model Dual-Stream Deep Residual Bi-LSTM dengan Temporal Attention yang mencapai akurasi evaluasi LOSO Cross-Validation 98.99% dan latensi inferensi ~2.3 ms.",
       category: "Mobile & AI",
       platform: "Android / iOS",
-      image: "/projects/isyaratku_simple.jpg",
+      image: "/projects/isyaratku.jpg",
       tags: [
         "React Native",
         "Expo SDK",
@@ -207,7 +207,7 @@ export const portfolioData: PortfolioData = {
       description: "Aplikasi mobile presensi mahasiswa resmi Universitas Muhammadiyah Semarang (UNIMUS). Mengintegrasikan pemindai QR code berbasis hardware camera perangkat dengan latensi rendah, sinkronisasi jadwal mata kuliah harian, riwayat kehadiran presisi, serta dukungan pembaruan Over-The-Air tanpa ketergantungan rilis app store.",
       category: "Mobile App",
       platform: "Android / iOS",
-      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&auto=format&fit=crop&q=80",
+      image: "/projects/dipma.jpeg",
       tags: ["React Native", "Expo SDK 57", "Expo Camera", "React Native Paper", "Stallion OTA", "Axios", "REST API"],
       featured: true,
       architectureHighlights: [
@@ -226,7 +226,7 @@ export const portfolioData: PortfolioData = {
       description: "Aplikasi mobile terintegrasi untuk pengelolaan dan peminjaman ruang kelas, aula, dan laboratorium di lingkungan Universitas Muhammadiyah Semarang (UNIMUS). Memfasilitasi dosen, tenaga kependidikan, dan mahasiswa dalam mengajukan peminjaman, serta mendukung Unit Rumah Tangga dalam proses verifikasi berjenjang.",
       category: "Mobile App",
       platform: "Android / iOS",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format&fit=crop&q=80",
+      image: "/projects/smartroom.jpeg",
       tags: ["React Native", "Expo SDK 57", "TypeScript", "FCM Push Notifications", "React Navigation v7", "AsyncStorage", "REST API"],
       gitlabUrl: "https://gitlab.com/vial300604/smartroom-mobile-app",
       featured: true,
