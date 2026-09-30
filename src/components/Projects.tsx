@@ -18,7 +18,7 @@ export default function Projects() {
             Proyek
           </h2>
           <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-            Aplikasi mobile produksi dan riset deep learning yang dirancang dengan integrasi hardware kamera, notifikasi push FCM, pembaruan OTA via Stallion, integrasi REST API backend, serta streaming WebSocket real-time.
+            Aplikasi mobile produksi dan riset deep learning yang dirancang dengan integrasi hardware kamera, push notifications FCM, continuous OTA updates via Stallion, backend REST API, serta real-time WebSocket streaming.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ export default function Projects() {
                     <div className="mb-4 space-y-1.5 p-3.5 rounded-xl bg-slate-50/70 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-700/50">
                       <div className="text-[11px] uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5 mb-1 font-semibold">
                         <Shield className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
-                        <span>Sorotan Arsitektur Teknis</span>
+                        <span>Key Architecture & Highlights</span>
                       </div>
                       {project.architectureHighlights.slice(0, 2).map((highlight, idx) => (
                         <p key={idx} className="text-xs text-slate-600 dark:text-slate-400 flex items-start gap-2">
@@ -97,7 +97,7 @@ export default function Projects() {
                       onClick={() => setActiveModalProject(project)}
                       className="px-4 py-2.5 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-500 text-white transition-colors min-h-[44px] shadow-xs"
                     >
-                      Buka Rincian Arsitektur
+                      Detail Proyek
                     </button>
                   </div>
                 </div>

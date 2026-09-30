@@ -48,7 +48,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <button
           ref={closeButtonRef}
           onClick={onClose}
-          aria-label="Tutup jendela rincian proyek"
+          aria-label="Tutup detail proyek"
           className="absolute top-4 right-4 p-2.5 rounded-xl text-slate-500 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
         >
           <X className="w-5 h-5" />
@@ -81,7 +81,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <div className="mb-6 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/70">
             <h3 className="text-xs uppercase tracking-wider text-slate-800 dark:text-slate-200 font-semibold mb-3 flex items-center gap-1.5">
               <Shield className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
-              <span>Sorotan Arsitektur & Rekayasa</span>
+              <span>Key Architecture & Highlights</span>
             </h3>
             <ul className="space-y-2">
               {project.architectureHighlights.map((h, i) => (
@@ -96,7 +96,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
         <div className="mb-8">
           <h3 className="text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5 font-semibold">
-            Teknologi yang Digunakan
+            Tech Stack
           </h3>
           <div className="flex flex-wrap gap-1.5">
             {project.tags.map((tag) => (

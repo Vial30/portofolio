@@ -24,10 +24,10 @@ export default function Skills() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 mb-3">
-            Keahlian Teknis & Ekosistem Rekayasa
+            Technical Skills & Tech Stack
           </h2>
           <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-            Spesialisasi mendalam pada ekosistem mobile React Native serta kapabilitas menyeluruh pada pengembangan web dan arsitektur backend PHP & Laravel.
+            Core focus pada mobile app development (React Native & Expo) serta kapabilitas solid pada web development dan backend architecture (PHP & Laravel).
           </p>
         </div>
 

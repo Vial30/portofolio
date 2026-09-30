@@ -42,7 +42,7 @@ export default function Contact() {
             Hubungi Saya
           </h2>
           <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-            Terbuka untuk diskusi proyek rekayasa aplikasi mobile (React Native), pengembangan web & backend (PHP / Laravel), maupun peluang kolaborasi profesional.
+            Terbuka untuk diskusi software development mobile app (React Native), web & backend development (PHP / Laravel), maupun peluang kolaborasi profesional.
           </p>
         </div>
 
