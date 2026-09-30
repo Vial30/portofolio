@@ -64,8 +64,8 @@ export default function Footer() {
                 href={personal.socials.whatsapp}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="WhatsApp Jovial Wahyu Aji Pradhana"
-                className="p-2.5 rounded-xl text-slate-500 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Hubungi WhatsApp Jovial Wahyu Aji Pradhana"
+                className="p-2.5 rounded-xl text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               >
                 <WhatsappIcon className="w-4 h-4" />
               </a>

@@ -34,9 +34,9 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         <a
           href="#"
-          className="flex items-center gap-2.5 rounded-lg p-1 transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700 dark:focus-visible:ring-emerald-400"
+          className="flex items-center gap-2.5 rounded-lg p-1 transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
         >
-          <div className="w-8 h-8 rounded-lg bg-emerald-900 text-emerald-50 dark:bg-emerald-600 dark:text-white flex items-center justify-center font-bold text-sm shadow-xs">
+          <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-sm shadow-xs">
             {portfolioData.personal.name.charAt(0)}
           </div>
           <div className="flex flex-col">
@@ -54,7 +54,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="px-3 py-1 text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-800 dark:hover:text-emerald-300 hover:bg-white/80 dark:hover:bg-slate-800 rounded-full transition-colors"
+              className="px-3 py-1 text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white dark:hover:bg-slate-800 rounded-full transition-colors"
             >
               {link.label}
             </a>

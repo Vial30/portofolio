@@ -9,13 +9,13 @@ export default function About() {
   const getPrincipleIcon = (index: number) => {
     switch (index) {
       case 0:
-        return <Smartphone className="w-4 h-4 text-emerald-700 dark:text-emerald-400" />;
+        return <Smartphone className="w-4 h-4 text-blue-600 dark:text-blue-400" />;
       case 1:
-        return <Server className="w-4 h-4 text-emerald-700 dark:text-emerald-400" />;
+        return <Server className="w-4 h-4 text-blue-600 dark:text-blue-400" />;
       case 2:
-        return <Layers className="w-4 h-4 text-emerald-700 dark:text-emerald-400" />;
+        return <Layers className="w-4 h-4 text-blue-600 dark:text-blue-400" />;
       default:
-        return <GitBranch className="w-4 h-4 text-emerald-700 dark:text-emerald-400" />;
+        return <GitBranch className="w-4 h-4 text-blue-600 dark:text-blue-400" />;
     }
   };
 
@@ -23,9 +23,6 @@ export default function About() {
     <section id="about" className="py-20 md:py-28 border-b border-slate-200/80 dark:border-slate-800/80">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mb-12">
-          <span className="text-xs uppercase tracking-widest text-emerald-700 dark:text-emerald-400 font-semibold mb-2 block">
-            Latar Belakang & Pendekatan Teknis
-          </span>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
             Fokus Rekayasa Perangkat Lunak
           </h2>
@@ -45,19 +42,19 @@ export default function About() {
             </h3>
             <ul className="space-y-3.5 text-sm text-slate-700 dark:text-slate-300">
               <li className="flex items-start gap-2.5">
-                <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                <Check className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                 <span><strong className="text-slate-900 dark:text-slate-100 font-medium">Rekayasa Aplikasi Mobile Utama</strong>: React Native (Expo SDK 57), hardware camera, dan performa native</span>
               </li>
               <li className="flex items-start gap-2.5">
-                <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                <Check className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                 <span><strong className="text-slate-900 dark:text-slate-100 font-medium">Pengembangan Web & Backend</strong>: PHP, Laravel (Eloquent, REST API, Sanctum), Next.js, dan TypeScript</span>
               </li>
               <li className="flex items-start gap-2.5">
-                <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                <Check className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                 <span><strong className="text-slate-900 dark:text-slate-100 font-medium">Integrasi Sistem Cerdas & AI</strong>: MediaPipe spatio-temporal, PyTorch Bi-LSTM, dan streaming WebSocket</span>
               </li>
               <li className="flex items-start gap-2.5">
-                <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+                <Check className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                 <span><strong className="text-slate-900 dark:text-slate-100 font-medium">Continuous Delivery & Updates</strong>: Stallion Over-The-Air (OTA) updates dan deployment cloud terintegrasi</span>
               </li>
             </ul>
@@ -75,7 +72,7 @@ export default function About() {
                 className="p-5 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 shadow-xs flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 flex items-center justify-center mb-3">
+                  <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/40 flex items-center justify-center mb-3">
                     {getPrincipleIcon(idx)}
                   </div>
                   <h4 className="text-sm font-semibold text-slate-900 dark:text-slate-100 mb-2 leading-snug">

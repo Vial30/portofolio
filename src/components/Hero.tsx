@@ -12,16 +12,11 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-start">
           <div className="lg:col-span-7 flex flex-col items-start text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200/80 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300 text-xs font-medium mb-6">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>{personal.availability}</span>
-            </div>
-
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-slate-100 leading-tight mb-3">
               {personal.name}
             </h1>
-            <p className="text-lg sm:text-xl text-emerald-800 dark:text-emerald-400 font-medium mb-4 flex items-center gap-2">
-              <span>{personal.title}</span>
+            <p className="text-lg sm:text-xl text-blue-600 dark:text-blue-400 font-medium mb-4">
+              {personal.title}
             </p>
 
             <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed mb-8 max-w-xl">
@@ -31,7 +26,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-3 mb-8 w-full sm:w-auto">
               <a
                 href="#projects"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white dark:bg-emerald-600 dark:hover:bg-emerald-500 dark:text-white font-medium text-sm transition-all duration-150 shadow-sm hover:shadow min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-all duration-150 shadow-sm hover:shadow min-h-[44px]"
               >
                 <span>Lihat Karya Unggulan</span>
                 <ArrowRight className="w-4 h-4" />
@@ -41,7 +36,7 @@ export default function Hero() {
                 href="#contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800/80 font-medium text-sm border border-slate-200 dark:border-slate-700/80 transition-all duration-150 shadow-xs min-h-[44px]"
               >
-                <Mail className="w-4 h-4 text-emerald-700 dark:text-emerald-400" />
+                <Mail className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 <span>Hubungi Saya</span>
               </a>
 
@@ -59,7 +54,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-slate-200/80 dark:border-slate-800/80 w-full">
               <div className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 mr-2 font-medium">
-                <MapPin className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                <MapPin className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
                 <span>{personal.location}</span>
               </div>
 
@@ -103,9 +98,9 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Hubungi WhatsApp Jovial Wahyu Aji Pradhana"
-                    className="p-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+                    className="p-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
                   >
-                    <WhatsappIcon className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                    <WhatsappIcon className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                   </a>
                 )}
               </div>
@@ -116,10 +111,10 @@ export default function Hero() {
             <div className="p-5 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200/90 dark:border-slate-800 shadow-xs">
               <div className="flex items-center justify-between mb-3.5 pb-2.5 border-b border-slate-100 dark:border-slate-800">
                 <span className="text-xs uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5 font-semibold">
-                  <Smartphone className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                  <Smartphone className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
                   <span>Karya Mobile & Cerdas Unggulan</span>
                 </span>
-                <span className="text-[11px] px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-medium">
+                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
                   React Native
                 </span>
               </div>
@@ -129,13 +124,13 @@ export default function Hero() {
                   <a
                     key={p.id}
                     href={`#${p.id}`}
-                    className="block p-3.5 rounded-xl bg-slate-50/70 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-700/50 hover:border-emerald-500/50 dark:hover:border-emerald-500/50 hover:bg-white dark:hover:bg-slate-800 transition-all duration-150 group"
+                    className="block p-3.5 rounded-xl bg-slate-50/70 dark:bg-slate-800/40 border border-slate-200/60 dark:border-slate-700/50 hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:bg-white dark:hover:bg-slate-800 transition-all duration-150 group"
                   >
                     <div className="flex items-center justify-between mb-1">
-                      <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100 group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
+                      <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                         {p.title}
                       </h3>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors" />
+                      <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
                     </div>
                     <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-2 leading-relaxed mb-2.5">
                       {p.tagline}
@@ -156,7 +151,7 @@ export default function Hero() {
             </div>
 
             <div className="p-3.5 rounded-xl bg-white dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400 flex items-start gap-2.5 shadow-xs">
-              <Check className="w-4 h-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
+              <Check className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
               <p className="leading-relaxed">
                 Diuji pada perangkat fisik kampus dengan kamera native QR scanner, integrasi backend Laravel, dan push notification FCM.
               </p>
@@ -170,7 +165,7 @@ export default function Hero() {
               <div className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100 mb-1">
                 {m.value}
               </div>
-              <div className="text-xs font-semibold text-emerald-800 dark:text-emerald-400 mb-0.5">
+              <div className="text-xs font-semibold text-blue-600 dark:text-blue-400 mb-0.5">
                 {m.label}
               </div>
               <div className="text-[11px] text-slate-500 dark:text-slate-400 leading-normal">
