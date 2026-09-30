@@ -1,0 +1,34 @@
+# Design Direction: Jovian Portfolio (Simple Modern Monochrome)
+
+- **Philosophy**: Minimal & Direct, Content-First, High-Craft Engineering.
+- **Aesthetic**: Simple Modern Monochrome (Warm Zinc / Obsidian & Chalk White).
+- **Core Strategy**: Elimination of AI-template cliches (no default blue buttons, no colorful capsule pills, no artificial glowing borders). The focus is entirely on real production code, architecture, and typography.
+- **Color Tokens**:
+  - Light Mode:
+    - Canvas Background: `#FFFFFF`
+    - Sub-surface / Well: `#F4F4F5`
+    - Card Surface: `#FAFAFA`
+    - Hairline Border: `#E4E4E7`
+    - Border Hover: `#D4D4D8`
+    - Text Primary: `#09090B`
+    - Text Secondary: `#52525B`
+    - Text Muted: `#71717A`
+    - Primary Action / CTA: Solid Black `#09090B` with White text `#FFFFFF`
+  - Dark Mode:
+    - Canvas Background: `#0A0A0B`
+    - Sub-surface / Well: `#121214`
+    - Card Surface: `#18181B`
+    - Hairline Border: `#27272A`
+    - Border Hover: `#3F3F46`
+    - Text Primary: `#FAFAFA`
+    - Text Secondary: `#A1A1AA`
+    - Text Muted: `#71717A`
+    - Primary Action / CTA: Solid White `#FFFFFF` with Black text `#09090B`
+- **Typography & Details**:
+  - Headings: Clean sans-serif, tight tracking (`tracking-tight`), crisp weight (semibold / bold).
+  - Code & Metadata: Crisp mono for versions, platforms, and technical packages.
+  - Buttons: 8px subtle border radius (`rounded-lg`), generous 44px minimum tap targets, smooth opacity/color transitions.
+- **Dials**:
+  - ENERGY: 1 (Calm, mature, authoritative)
+  - RHYTHM: 2 (Structured, clear section dividers, focus on content hierarchy)
+  - MOTION: 1 (Restrained, instant-feel 150ms transitions, no bouncing or looping noise)

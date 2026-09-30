@@ -1,8 +1,8 @@
 "use client";
 
 import { portfolioData } from "@/data/portfolio";
-import { ArrowUp, Heart } from "lucide-react";
-import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from "./SocialIcons";
+import { ArrowUp } from "lucide-react";
+import { GithubIcon, GitlabIcon, LinkedinIcon, WhatsappIcon } from "./SocialIcons";
 
 export default function Footer() {
   const { personal } = portfolioData;
@@ -12,77 +12,71 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-950 py-12">
+    <footer className="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 py-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Brand & Made with info */}
-          <div className="flex flex-col items-center md:items-start gap-2">
-            <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-white">
-              <span className="w-2.5 h-2.5 rounded-full bg-blue-600 inline-block" />
+          {/* Identity & Technical Footnote */}
+          <div className="flex flex-col items-center md:items-start gap-1 text-center md:text-left">
+            <div className="flex items-center gap-2 font-semibold text-zinc-900 dark:text-zinc-100 text-sm">
               <span>{personal.name}</span>
-              <span className="text-xs font-normal text-slate-400">© {new Date().getFullYear()}</span>
+              <span className="text-zinc-400 font-normal font-mono">© {new Date().getFullYear()}</span>
             </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
-              <span>Dibuat dengan</span>
-              <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
-              <span>menggunakan Next.js, React &amp; Tailwind CSS</span>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400">
+              Dibangun dengan Next.js App Router, TypeScript, Tailwind CSS, dan siap di-deploy ke Vercel.
             </p>
           </div>
 
-          {/* Socials & Back to Top */}
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              {personal.socials.github && (
-                <a
-                  href={personal.socials.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="GitHub"
-                  className="p-2 rounded-lg text-slate-500 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                >
-                  <GithubIcon className="w-4 h-4" />
-                </a>
-              )}
-              {personal.socials.linkedin && (
-                <a
-                  href={personal.socials.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="LinkedIn"
-                  className="p-2 rounded-lg text-slate-500 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                >
-                  <LinkedinIcon className="w-4 h-4" />
-                </a>
-              )}
-              {personal.socials.twitter && (
-                <a
-                  href={personal.socials.twitter}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Twitter"
-                  className="p-2 rounded-lg text-slate-500 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                >
-                  <TwitterIcon className="w-4 h-4" />
-                </a>
-              )}
-              {personal.socials.instagram && (
-                <a
-                  href={personal.socials.instagram}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Instagram"
-                  className="p-2 rounded-lg text-slate-500 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-                >
-                  <InstagramIcon className="w-4 h-4" />
-                </a>
-              )}
-            </div>
+          {/* Social Links & Back to Top */}
+          <div className="flex items-center gap-2">
+            {personal.socials.github && (
+              <a
+                href={personal.socials.github}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub Jovian"
+                className="p-2.5 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+              >
+                <GithubIcon className="w-4 h-4" />
+              </a>
+            )}
+            {personal.socials.gitlab && (
+              <a
+                href={personal.socials.gitlab}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitLab Jovian"
+                className="p-2.5 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+              >
+                <GitlabIcon className="w-4 h-4" />
+              </a>
+            )}
+            {personal.socials.linkedin && (
+              <a
+                href={personal.socials.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn Jovian"
+                className="p-2.5 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+              >
+                <LinkedinIcon className="w-4 h-4" />
+              </a>
+            )}
+            {personal.socials.whatsapp && (
+              <a
+                href={personal.socials.whatsapp}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="WhatsApp Jovian"
+                className="p-2.5 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+              >
+                <WhatsappIcon className="w-4 h-4" />
+              </a>
+            )}
 
             <button
               onClick={scrollToTop}
-              aria-label="Scroll to top"
-              className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-all duration-200 shadow-sm"
-              title="Kembali ke atas"
+              aria-label="Kembali ke bagian atas halaman"
+              className="p-2.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center ml-2"
             >
               <ArrowUp className="w-4 h-4" />
             </button>

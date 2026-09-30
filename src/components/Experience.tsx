@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { portfolioData } from "@/data/portfolio";
-import { Briefcase, GraduationCap, Calendar, MapPin, Sparkles } from "lucide-react";
+import { Briefcase, GraduationCap, Calendar, MapPin } from "lucide-react";
 
 export default function Experience() {
   const { experiences } = portfolioData;
@@ -11,91 +11,86 @@ export default function Experience() {
   const filteredItems = experiences.filter((item) => item.type === activeTab);
 
   return (
-    <section id="experience" className="py-20 md:py-28 relative">
+    <section id="experience" className="py-20 md:py-28 border-b border-zinc-200 dark:border-zinc-800/80">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 dark:bg-blue-500/15 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-semibold uppercase tracking-wider mb-3">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Perjalanan Karier & Edukasi</span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
-            Pengalaman & Latar Belakang
+        <div className="max-w-3xl mb-10">
+          <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-2 block">
+            Jejak Rekayasa & Pendidikan
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-3">
+            Pengalaman Kerja & Studi
           </h2>
-          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400">
-            Jejak langkah profesional dan fondasi akademis yang membentuk kapabilitas saya hari ini.
+          <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            Perjalanan pengembangan sistem perangkat lunak nyata dan fondasi akademis yang mendasarinya.
           </p>
         </div>
 
-        {/* Tab Switcher */}
-        <div className="flex justify-center mb-12">
-          <div className="p-1 rounded-2xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 inline-flex">
-            <button
-              onClick={() => setActiveTab("work")}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 ${
-                activeTab === "work"
-                  ? "bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-sm"
-                  : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
-              }`}
-            >
-              <Briefcase className="w-4 h-4 text-blue-500" />
-              <span>Pengalaman Kerja</span>
-            </button>
-            <button
-              onClick={() => setActiveTab("education")}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 ${
-                activeTab === "education"
-                  ? "bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-sm"
-                  : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
-              }`}
-            >
-              <GraduationCap className="w-4 h-4 text-purple-500" />
-              <span>Pendidikan</span>
-            </button>
-          </div>
+        {/* Tab Switcher (min 44px tap target) */}
+        <div className="flex gap-2 mb-10">
+          <button
+            onClick={() => setActiveTab("work")}
+            className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-colors min-h-[44px] ${
+              activeTab === "work"
+                ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+                : "bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+            }`}
+          >
+            <Briefcase className="w-4 h-4 text-zinc-500" />
+            <span>Pengalaman Proyek & Kerja</span>
+          </button>
+          <button
+            onClick={() => setActiveTab("education")}
+            className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-colors min-h-[44px] ${
+              activeTab === "education"
+                ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+                : "bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+            }`}
+          >
+            <GraduationCap className="w-4 h-4 text-zinc-500" />
+            <span>Pendidikan Tinggi</span>
+          </button>
         </div>
 
-        {/* Timeline Container */}
-        <div className="relative pl-6 sm:pl-8 border-l-2 border-slate-200 dark:border-slate-800 space-y-10">
+        {/* Timeline Items */}
+        <div className="relative pl-6 border-l-2 border-zinc-200 dark:border-zinc-800 space-y-8">
           {filteredItems.map((item) => (
-            <div key={item.id} className="relative group">
-              {/* Timeline Marker Node */}
-              <div className="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white dark:border-slate-950 shadow-md group-hover:scale-125 transition-transform" />
+            <div key={item.id} className="relative">
+              {/* Clean Timeline Marker */}
+              <div className="absolute -left-[31px] top-2 w-3 h-3 rounded-full bg-zinc-900 dark:bg-zinc-100 border-2 border-white dark:border-zinc-900" />
 
-              {/* Timeline Card */}
-              <div className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 shadow-sm transition-all duration-200 group-hover:-translate-y-0.5">
+              <div className="p-5 sm:p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white">
+                  <h3 className="text-base sm:text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
                     {item.role}
                   </h3>
-                  <div className="flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-500/10 dark:bg-blue-500/15 px-3 py-1 rounded-full border border-blue-500/20">
+                  <div className="inline-flex items-center gap-1.5 text-xs text-zinc-500 dark:text-zinc-400 font-mono">
                     <Calendar className="w-3.5 h-3.5" />
                     <span>{item.period}</span>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 text-xs font-medium text-slate-500 dark:text-slate-400 mb-4">
-                  <span className="font-semibold text-slate-700 dark:text-slate-300">
+                <div className="flex items-center gap-2 text-xs text-zinc-600 dark:text-zinc-400 mb-3">
+                  <span className="font-semibold text-zinc-800 dark:text-zinc-200">
                     {item.company}
                   </span>
                   <span>•</span>
                   <span className="flex items-center gap-1">
-                    <MapPin className="w-3 h-3 text-rose-500" />
+                    <MapPin className="w-3 h-3 text-zinc-400" />
                     {item.location}
                   </span>
                 </div>
 
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
                   {item.description}
                 </p>
 
-                {/* Skills tags */}
                 {item.skills && item.skills.length > 0 && (
-                  <div className="flex flex-wrap gap-1.5 pt-2">
+                  <div className="flex flex-wrap gap-1">
                     {item.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="px-2.5 py-0.5 rounded-md text-[11px] font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300"
+                        className="px-2 py-0.5 rounded text-[10px] font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200/60 dark:border-zinc-700/60"
                       >
                         {skill}
                       </span>
