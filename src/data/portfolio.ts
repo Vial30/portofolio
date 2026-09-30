@@ -101,7 +101,7 @@ export const portfolioData: PortfolioData = {
       detail: "Arsitektur MVC, RESTful APIs, Eloquent ORM, dan Next.js",
     },
     {
-      label: "Karya Nyata Teruji",
+      label: "Proyek Teruji",
       value: "3 Proyek",
       detail: "Dipma UNIMUS Mobile, Smart Room UNIMUS, dan IsyaratKu BISINDO",
     },

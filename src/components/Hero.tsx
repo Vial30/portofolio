@@ -28,7 +28,7 @@ export default function Hero() {
                 href="#projects"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-all duration-150 shadow-sm hover:shadow min-h-[44px]"
               >
-                <span>Lihat Karya Unggulan</span>
+                <span>Lihat Proyek Unggulan</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
@@ -112,7 +112,7 @@ export default function Hero() {
               <div className="flex items-center justify-between mb-3.5 pb-2.5 border-b border-slate-100 dark:border-slate-800">
                 <span className="text-xs uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5 font-semibold">
                   <Smartphone className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
-                  <span>Karya Mobile & Cerdas Unggulan</span>
+                  <span>Proyek Mobile Unggulan</span>
                 </span>
                 <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
                   React Native

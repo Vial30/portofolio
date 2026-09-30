@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { Project } from "@/data/portfolio";
 import { X, ExternalLink, Check, Shield } from "lucide-react";
 import Image from "next/image";
-import { GithubIcon, GitlabIcon } from "./SocialIcons";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -112,29 +111,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         </div>
 
         <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-200 dark:border-slate-800">
-          {project.gitlabUrl && (
-            <a
-              href={project.gitlabUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-colors min-h-[44px] shadow-xs"
-            >
-              <GitlabIcon className="w-4 h-4 text-white" />
-              <span>Buka Repositori GitLab</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
-          )}
-          {project.githubUrl && (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-medium border border-slate-200 dark:border-slate-700 transition-colors min-h-[44px]"
-            >
-              <GithubIcon className="w-4 h-4" />
-              <span>Source Code GitHub</span>
-            </a>
-          )}
           {project.demoUrl && (
             <a
               href={project.demoUrl}

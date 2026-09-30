@@ -5,7 +5,6 @@ import { portfolioData, Project } from "@/data/portfolio";
 import ProjectModal from "./ProjectModal";
 import { ArrowUpRight, Shield } from "lucide-react";
 import Image from "next/image";
-import { GithubIcon, GitlabIcon } from "./SocialIcons";
 
 export default function Projects() {
   const { projects } = portfolioData;
@@ -16,7 +15,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 mb-3">
-            Karya Rekayasa Perangkat Lunak
+            Proyek
           </h2>
           <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
             Aplikasi mobile produksi dan riset deep learning yang dirancang dengan integrasi hardware kamera, notifikasi push FCM, pembaruan OTA via Stallion, integrasi REST API backend, serta streaming WebSocket real-time.
@@ -100,32 +99,6 @@ export default function Projects() {
                     >
                       Buka Rincian Arsitektur
                     </button>
-
-                    {project.gitlabUrl && (
-                      <a
-                        href={project.gitlabUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Lihat repositori di GitLab"
-                        className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-colors min-h-[44px]"
-                      >
-                        <GitlabIcon className="w-3.5 h-3.5 text-orange-600 dark:text-orange-400" />
-                        <span>GitLab</span>
-                      </a>
-                    )}
-
-                    {project.githubUrl && (
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Lihat repositori di GitHub"
-                        className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-colors min-h-[44px]"
-                      >
-                        <GithubIcon className="w-3.5 h-3.5 text-slate-600 dark:text-slate-400" />
-                        <span>GitHub</span>
-                      </a>
-                    )}
                   </div>
                 </div>
               </div>
