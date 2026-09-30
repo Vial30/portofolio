@@ -1,34 +1,38 @@
-# Design Direction: Jovian Portfolio (Simple Modern Monochrome)
+# Design Direction: Jovial Wahyu Aji Pradhana Portfolio (Soft Calm Modern)
 
-- **Philosophy**: Minimal & Direct, Content-First, High-Craft Engineering.
-- **Aesthetic**: Simple Modern Monochrome (Warm Zinc / Obsidian & Chalk White).
-- **Core Strategy**: Elimination of AI-template cliches (no default blue buttons, no colorful capsule pills, no artificial glowing borders). The focus is entirely on real production code, architecture, and typography.
+- **Philosophy**: Human, Authentic, Calming, Content-First Engineering.
+- **Aesthetic**: Soft Calm Modern (Sage Alabaster & Warm Slate Noir).
+- **Core Strategy**: Elimination of loud AI-template cliches (no vivid neon blue gradients, no artificial glowing capsules). Balanced, soft, comfortable color harmony with gentle emerald/sage accents and crisp typography.
 - **Color Tokens**:
   - Light Mode:
-    - Canvas Background: `#FFFFFF`
-    - Sub-surface / Well: `#F4F4F5`
-    - Card Surface: `#FAFAFA`
-    - Hairline Border: `#E4E4E7`
-    - Border Hover: `#D4D4D8`
-    - Text Primary: `#09090B`
-    - Text Secondary: `#52525B`
-    - Text Muted: `#71717A`
-    - Primary Action / CTA: Solid Black `#09090B` with White text `#FFFFFF`
+    - Canvas Background: `#FBFBFA` (Soft warm porcelain)
+    - Sub-surface: `#F3F5F4`
+    - Card Surface: `#FFFFFF`
+    - Subtle Hairline Border: `#E5E9E7`
+    - Border Hover: `#D2D8D5`
+    - Text Primary: `#151C19`
+    - Text Secondary: `#4D5B55`
+    - Text Muted: `#6B7A73`
+    - Accent Sage / Emerald: `#2A6A52`
+    - Accent Amber: `#B45309`
+    - Primary Action / CTA: Deep Slate `#18221E` with White text `#FFFFFF`
   - Dark Mode:
-    - Canvas Background: `#0A0A0B`
-    - Sub-surface / Well: `#121214`
-    - Card Surface: `#18181B`
-    - Hairline Border: `#27272A`
-    - Border Hover: `#3F3F46`
-    - Text Primary: `#FAFAFA`
-    - Text Secondary: `#A1A1AA`
-    - Text Muted: `#71717A`
-    - Primary Action / CTA: Solid White `#FFFFFF` with Black text `#09090B`
+    - Canvas Background: `#0D1210` (Comfortable eye-friendly slate noir)
+    - Sub-surface: `#131916`
+    - Card Surface: `#161E1B`
+    - Subtle Hairline Border: `#232F2A`
+    - Border Hover: `#33433C`
+    - Text Primary: `#F2F6F4`
+    - Text Secondary: `#9CB0A7`
+    - Text Muted: `#6E8279`
+    - Accent Sage / Emerald: `#38A176`
+    - Accent Amber: `#F59E0B`
+    - Primary Action / CTA: Soft Sage `#EAF3EE` with Deep text `#0D1210`
 - **Typography & Details**:
   - Headings: Clean sans-serif, tight tracking (`tracking-tight`), crisp weight (semibold / bold).
-  - Code & Metadata: Crisp mono for versions, platforms, and technical packages.
-  - Buttons: 8px subtle border radius (`rounded-lg`), generous 44px minimum tap targets, smooth opacity/color transitions.
+  - Cards: Soft ambient shadow (`shadow-xs` / `shadow-sm`), rounded corners (`rounded-xl` / `rounded-2xl`).
+  - Buttons: Minimum 44px tap targets for mobile usability, smooth micro-interactions (150ms).
 - **Dials**:
-  - ENERGY: 1 (Calm, mature, authoritative)
-  - RHYTHM: 2 (Structured, clear section dividers, focus on content hierarchy)
-  - MOTION: 1 (Restrained, instant-feel 150ms transitions, no bouncing or looping noise)
+  - ENERGY: 2 (Calm, confident, comfortable)
+  - RHYTHM: 2 (Organized, spacious, clean hierarchy)
+  - MOTION: 1 (Subtle, purposeful 150ms ease transitions)

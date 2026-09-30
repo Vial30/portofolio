@@ -9,11 +9,8 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col selection:bg-zinc-900 selection:text-white dark:selection:bg-zinc-100 dark:selection:text-zinc-900">
-      {/* Navigation Bar */}
+    <div className="min-h-screen flex flex-col selection:bg-emerald-900 selection:text-emerald-50 dark:selection:bg-emerald-600 dark:selection:text-white">
       <Navbar />
-
-      {/* Main Content Sections */}
       <main className="flex-grow">
         <Hero />
         <About />
@@ -22,8 +19,6 @@ export default function Home() {
         <Experience />
         <Contact />
       </main>
-
-      {/* Footer */}
       <Footer />
     </div>
   );

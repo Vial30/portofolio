@@ -35,49 +35,47 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-28 border-b border-zinc-200 dark:border-zinc-800/80">
+    <section id="contact" className="py-20 md:py-28 border-b border-slate-200/80 dark:border-slate-800/80">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Section Header */}
         <div className="max-w-3xl mb-12">
-          <span className="text-xs font-mono uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-2 block">
+          <span className="text-xs uppercase tracking-widest text-emerald-700 dark:text-emerald-400 font-semibold mb-2 block">
             Komunikasi & Diskusi
           </span>
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 mb-3">
             Hubungi Saya
           </h2>
-          <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-            Terbuka untuk diskusi proyek rekayasa perangkat lunak, kolaborasi mobile/web, atau peluang kerja profesional.
+          <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Terbuka untuk diskusi proyek rekayasa aplikasi mobile (React Native), pengembangan web & backend (PHP / Laravel), maupun peluang kolaborasi profesional.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          {/* Left Column: Direct Contact Info */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+            <div className="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800 shadow-xs">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 flex items-center justify-center">
-                  <Mail className="w-4 h-4" />
+                <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 flex items-center justify-center">
+                  <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Alamat Email</div>
-                  <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">{personal.email}</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400 font-medium">Alamat Email</div>
+                  <div className="text-sm font-semibold text-slate-900 dark:text-slate-100">{personal.email}</div>
                 </div>
               </div>
 
               <div className="flex flex-wrap items-center gap-2">
                 <a
                   href={`mailto:${personal.email}`}
-                  className="flex-1 inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 font-medium text-xs transition-colors min-h-[44px]"
+                  className="flex-1 inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white dark:bg-emerald-600 dark:hover:bg-emerald-500 font-medium text-xs transition-colors min-h-[44px] shadow-xs"
                 >
                   Kirim Email Langsung
                 </a>
                 <button
                   onClick={copyEmail}
-                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 font-medium text-xs border border-zinc-200 dark:border-zinc-700 transition-colors min-h-[44px]"
+                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-medium text-xs border border-slate-200 dark:border-slate-700 transition-colors min-h-[44px]"
                 >
                   {copiedEmail ? (
                     <>
-                      <Check className="w-3.5 h-3.5 text-emerald-500" />
+                      <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                       <span>Tersalin</span>
                     </>
                   ) : (
@@ -90,24 +88,24 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-4">
+            <div className="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800 shadow-xs space-y-4">
               <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-zinc-500 mt-0.5" />
+                <MapPin className="w-4 h-4 text-emerald-600 dark:text-emerald-400 mt-0.5" />
                 <div>
-                  <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Domisili</div>
-                  <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                  <div className="text-xs text-slate-500 dark:text-slate-400 font-medium">Domisili</div>
+                  <div className="text-sm font-medium text-slate-900 dark:text-slate-100">
                     {personal.location}
                   </div>
                 </div>
               </div>
 
               {personal.phone && (
-                <div className="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+                <div className="flex items-center justify-between pt-3 border-t border-slate-100 dark:border-slate-800">
                   <div className="flex items-center gap-3">
-                    <Phone className="w-4 h-4 text-zinc-500" />
+                    <Phone className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                     <div>
-                      <div className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">WhatsApp</div>
-                      <div className="text-xs font-semibold text-zinc-900 dark:text-zinc-100">
+                      <div className="text-xs text-slate-500 dark:text-slate-400 font-medium">WhatsApp</div>
+                      <div className="text-xs font-semibold text-slate-900 dark:text-slate-100">
                         {personal.phone}
                       </div>
                     </div>
@@ -118,9 +116,9 @@ export default function Contact() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Kirim pesan WhatsApp"
-                      className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-medium border border-zinc-200 dark:border-zinc-700 transition-colors min-h-[44px]"
+                      className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-950/60 text-xs font-medium border border-emerald-200/80 dark:border-emerald-800/60 transition-colors min-h-[44px]"
                     >
-                      <WhatsappIcon className="w-3.5 h-3.5" />
+                      <WhatsappIcon className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                       <span>Chat WhatsApp</span>
                     </a>
                   )}
@@ -129,23 +127,22 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right Column: Contact Form */}
           <div className="lg:col-span-7">
-            <div className="p-6 sm:p-8 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+            <div className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800 shadow-xs">
               {isSubmitted ? (
                 <div className="py-8 text-center space-y-3">
-                  <div className="w-10 h-10 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 flex items-center justify-center mx-auto">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-500" />
+                  <div className="w-12 h-12 rounded-full bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto">
+                    <CheckCircle2 className="w-6 h-6" />
                   </div>
-                  <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100">
+                  <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">
                     Pesan Berhasil Terkirim
                   </h3>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto">
+                  <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
                     Terima kasih telah menghubungi. Saya akan meninjau pesan Anda dan membalasnya sesegera mungkin.
                   </p>
                   <button
                     onClick={() => setIsSubmitted(false)}
-                    className="px-4 py-2.5 rounded-lg bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 font-medium text-xs transition-colors mt-2 min-h-[44px]"
+                    className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white dark:bg-emerald-600 dark:hover:bg-emerald-500 font-medium text-xs transition-colors mt-2 min-h-[44px]"
                   >
                     Kirim Pesan Lain
                   </button>
@@ -154,7 +151,7 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="contact-name" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1.5 font-mono">
+                      <label htmlFor="contact-name" className="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">
                         Nama Lengkap
                       </label>
                       <input
@@ -164,12 +161,12 @@ export default function Contact() {
                         placeholder="Nama Anda"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 text-sm focus:outline-none focus:border-zinc-900 dark:focus:border-zinc-100 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-zinc-100 transition-colors min-h-[44px]"
+                        className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 dark:focus:border-emerald-400 dark:focus:ring-emerald-400 transition-colors min-h-[44px]"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="contact-email" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1.5 font-mono">
+                      <label htmlFor="contact-email" className="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">
                         Email
                       </label>
                       <input
@@ -179,45 +176,45 @@ export default function Contact() {
                         placeholder="email@domain.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 text-sm focus:outline-none focus:border-zinc-900 dark:focus:border-zinc-100 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-zinc-100 transition-colors min-h-[44px]"
+                        className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 dark:focus:border-emerald-400 dark:focus:ring-emerald-400 transition-colors min-h-[44px]"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="contact-subject" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1.5 font-mono">
+                    <label htmlFor="contact-subject" className="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">
                       Subjek Pesan
                     </label>
                     <input
                       id="contact-subject"
                       type="text"
                       required
-                      placeholder="e.g. Proyek Aplikasi Mobile / Rekayasa Web"
+                      placeholder="e.g. Proyek Aplikasi Mobile / Web Laravel"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 text-sm focus:outline-none focus:border-zinc-900 dark:focus:border-zinc-100 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-zinc-100 transition-colors min-h-[44px]"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 dark:focus:border-emerald-400 dark:focus:ring-emerald-400 transition-colors min-h-[44px]"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="contact-message" className="block text-xs font-medium text-zinc-700 dark:text-zinc-300 mb-1.5 font-mono">
+                    <label htmlFor="contact-message" className="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">
                       Isi Pesan
                     </label>
                     <textarea
                       id="contact-message"
                       required
                       rows={4}
-                      placeholder="Tuliskan rincian kebutuhan atau pesan Anda..."
+                      placeholder="Tuliskan rincian kebutuhan atau diskusi Anda..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 text-sm focus:outline-none focus:border-zinc-900 dark:focus:border-zinc-100 focus:ring-1 focus:ring-zinc-900 dark:focus:ring-zinc-100 transition-colors resize-none"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 dark:focus:border-emerald-400 dark:focus:ring-emerald-400 transition-colors resize-none"
                     />
                   </div>
 
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 font-medium text-sm transition-colors disabled:opacity-50 min-h-[44px]"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white dark:bg-emerald-600 dark:hover:bg-emerald-500 font-medium text-sm transition-colors disabled:opacity-50 min-h-[44px] shadow-xs"
                   >
                     {isSubmitting ? (
                       <span>Mengirim...</span>

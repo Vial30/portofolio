@@ -15,31 +15,32 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jovialwahyu.vercel.app"),
-  title: "Jovial Wahyu Aji Pradhana | Mobile & Software Engineer",
-  description: "Portofolio Jovial Wahyu Aji Pradhana: Mobile & Software Engineer spesialis React Native, Expo, dan integrasi sistem cerdas. Pengembang Dipma UNIMUS Mobile, Smart Room UNIMUS, dan IsyaratKu BISINDO.",
+  title: "Jovial Wahyu Aji Pradhana | Mobile App Software Engineer & Web Developer",
+  description: "Portofolio Jovial Wahyu Aji Pradhana: Mobile App Software Engineer & Web Developer spesialis React Native (Expo) dan web backend PHP / Laravel. Pengembang Dipma UNIMUS Mobile, Smart Room UNIMUS, dan IsyaratKu BISINDO.",
   keywords: [
     "portfolio",
     "jovial wahyu",
     "jovial wahyu aji pradhana",
-    "mobile engineer",
-    "software engineer",
+    "mobile app engineer",
+    "web developer",
     "react native",
     "expo",
+    "php",
+    "laravel",
+    "typescript",
     "unimus",
     "bisindo",
-    "deep learning",
-    "typescript",
   ],
   authors: [{ name: "Jovial Wahyu Aji Pradhana" }],
   openGraph: {
-    title: "Jovial Wahyu Aji Pradhana | Mobile & Software Engineer",
-    description: "Portofolio Jovial Wahyu Aji Pradhana: Mobile & Software Engineer spesialis React Native, Expo, dan integrasi sistem cerdas. Pengembang Dipma UNIMUS Mobile, Smart Room UNIMUS, dan IsyaratKu BISINDO.",
+    title: "Jovial Wahyu Aji Pradhana | Mobile App Software Engineer & Web Developer",
+    description: "Portofolio Jovial Wahyu Aji Pradhana: Mobile App Software Engineer & Web Developer spesialis React Native (Expo) dan web backend PHP / Laravel. Pengembang Dipma UNIMUS Mobile, Smart Room UNIMUS, dan IsyaratKu BISINDO.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jovial Wahyu Aji Pradhana | Mobile & Software Engineer",
-    description: "Portofolio Jovial Wahyu Aji Pradhana: Mobile & Software Engineer spesialis React Native, Expo, dan integrasi sistem cerdas. Pengembang Dipma UNIMUS Mobile, Smart Room UNIMUS, dan IsyaratKu BISINDO.",
+    title: "Jovial Wahyu Aji Pradhana | Mobile App Software Engineer & Web Developer",
+    description: "Portofolio Jovial Wahyu Aji Pradhana: Mobile App Software Engineer & Web Developer spesialis React Native (Expo) dan web backend PHP / Laravel. Pengembang Dipma UNIMUS Mobile, Smart Room UNIMUS, dan IsyaratKu BISINDO.",
   },
 };
 
